@@ -3,13 +3,13 @@ from logging.handlers import RotatingFileHandler
 import sys
 
 
-def setup_logger(name: str, log_file: str = "automation.log", level: int = logging.INFO) -> logging.Logger:
+def setup_logger(name: str, log_file: str = "dropit_automation.log", level: int = logging.INFO) -> logging.Logger:
     logger = logging.getLogger(name)
     logger.setLevel(level)
-
+    
     if logger.hasHandlers():
-        return logger
-
+            logger.handlers.clear()
+            
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(level)
     console_formatter = logging.Formatter(
