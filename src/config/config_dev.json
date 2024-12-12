@@ -1,0 +1,27 @@
+{
+    "urls": {
+        "base": "https://drpt-external-dev.myshopify.com",
+        "login_page": "https://drpt-external-dev.myshopify.com/password",
+        "catalog_page": "https://drpt-external-dev.myshopify.com/catalog",
+        "pets": "https://petstore.swagger.io/v2"
+    },
+    "credentials": {
+        "username": "",
+        "password": "giclao"
+    },
+    "user_details": {
+        "email": "test.user@example.com",
+        "last_name": "Smith",
+        "address": "123 Test Lane",
+        "city": "Testville"
+    },
+    "payment_details": {
+        "expiry": "12/26",
+        "card_number": "1",
+        "cvv": "777",
+        "name_on_card": "Bogus Gateway"
+    },
+    "payment_information":{
+        "shipping_cost": "23.99"
+    }
+}
