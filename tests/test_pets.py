@@ -33,14 +33,14 @@ def test_find_pet_by_status(dropit):
     Test finding pets by status 'available', verifying the fourth pet's name is 'Puff',
     and logging the pet object to the console.
     """
-    logger = setup_logger("dropit")
+    logger = setup_logger("test_find_pet_by_status")
 
     available_pets = dropit.pets_api.find_pets_by_status("available")
 
     assert len(available_pets) >= 4, "Less than 4 pets available."
     fourth_pet = available_pets[3]
+    logger.info(f"Fourth pet: {pformat(fourth_pet)}")
     assert fourth_pet.name == "Puff", f"Expected name 'Puff', but got '{fourth_pet.name}'"
-    logger.info(f"Fourth pet: {pformat()}")
 
 
 def test_validate_pets_by_status_sold(dropit):

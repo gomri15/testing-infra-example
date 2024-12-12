@@ -15,7 +15,7 @@ class DropIt:
         self.config = config
         self.context = context
         self.page = page
-        self.logger = setup_logger("dropit")
+        self.logger = setup_logger("DropIt Base")
 
         self.login_page = LoginPage(config, page)
         self.catalog_page = CatalogPage(config, page)
@@ -26,6 +26,7 @@ class DropIt:
 
         self.pets_api = PetsApiClient(
             page.context.request, self.config.urls.pets, self.logger)
+        self.logger.info("DropIt initialized")
 
     def goto(self, url_key: str):
         url = getattr(self.config.urls, url_key, None)
