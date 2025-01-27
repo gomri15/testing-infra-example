@@ -1,6 +1,6 @@
 
 
-# DropIt Testing Framework
+# Testing Framework
 
 ## Overview
 
