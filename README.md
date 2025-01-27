@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **DropIt Testing Framework** is a robust and scalable automation framework designed for UI and API testing. It leverages Playwright for browser automation and APIRequestContext for API testing, enabling comprehensive end-to-end test coverage. The framework is built for maintainability, reusability, and test isolation, making it ideal for dynamic, large-scale applications.
+The **Example Testing Framework** is a robust and scalable automation framework designed for UI and API testing. It leverages Playwright for browser automation and APIRequestContext for API testing, enabling comprehensive end-to-end test coverage. The framework is built for maintainability, reusability, and test isolation, making it ideal for dynamic, large-scale applications.
 
 ---
 
